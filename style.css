@@ -470,14 +470,15 @@ a:visited{
 	border-collapse: collapse;
     }
 .gallery{
-    width: 2vw;
-    height: 2%;
+    width: 100%;
     clear: both;
     text-align: center;
     
 }
 .gallery img{
     display: inline-block;
+    width: 90%;
+    padding:2%;
     }
 #footer
 {
