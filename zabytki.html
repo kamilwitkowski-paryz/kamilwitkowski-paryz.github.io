@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="shortcut icon" href="img/logo2.png">
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script src="jquery.scrollTo.min.js"></script>
+        
+        <script>
+            jQuery(
+                function($){
+                    //zresetuj scrolla
+                    $.scrollTo(0);
+                    $('#luwr').click(function() { $.scrollTo($('#luwr'), 500); });
+                    $('#link2').click(function() { $.scrollTo($('#zasadacrt'), 500); });
+                    $('#link3').click(function() { $.scrollTo($('#maskicrt'), 500); });
+                    
+                    $('.scrollup').click(function() { $.scrollTo($('body'), 700); });
+                } 
+            );
+            
+            //pokaz podczas przewijania
+            $(window).scroll(
+                function(){
+                    if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+                    else $('.scrollup').fadeOut();
+                }
+            );
+        </script>
+        <title> Paryż</title>
+    </head>
+    
+    <body>
+        <div id="logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <span> Przewodnik po Paryżu </span>
+        </div>
+         <div class="topnav" id="myTopnav">
+              <a href="index.html" class="active">Strona główna</a>
+             <a href="miasto.html">O mieście</a>
+              <a href="zabytki.html">Zabytki Paryża</a>
+              <a href="informacje.html">Praktyczne informacje</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
+        </div>
+         <div id="container">
+             <a href="#" class="scrollup"></a>
+             <div class="content">
+                 <h1>Najciekawsze zabytki w Paryżu</h1><br>
+                 <h3>Mapa turystyczna Paryża</h3>
+                 <iframe id="tour" src="img/map4.png" alt="Mapa turystyczna Paryża"></iframe>
+                <h3>Kliknij, aby wyruszyć w podróż</h3>
+                <ol>
+                    <a href="#luwr"><li>Luwr</li></a>
+                    <a href="#wieza"><li>Wieża Eiffla</li></a>
+                    <a href="#katedra"><li>Katedra Notre-Dame</li></a>
+                    <a href="#luk"><li>Łuk Triumfalny</li></a>
+                    <a href="#avenue"><li>Avenue des Champs-Elysees</li></a>
+                    <a href="#plac"><li>Plac Zgody</li></a>
+                    <a href="#sainte"><li>Sainte-Chapelle</li></a>
+                    <a href="#bazylika"><li>Bazylika Sacre-Coeur</li></a>
+                    <a href="#ogrod"><li>Ogród Luksemburski</li></a>
+                    <a href="#moulin"><li>Moulin Rouge</li></a>
+                </ol>
+             </div>
+            <div class="content">
+                <h2 id="luwr">Luwr</h2>
+                <img src="img/luwr.jpg" alt="Paryż">
+            <p>Luwr - warto poświęcić na zwiedzanie tego potężnego muzeum nawet cały dzień, bez obaw o bycie zwiedzionym. W Luwrze znajdują się nie tylko bezcenne dzieła sztuki malarskiej. Jest to też piękny  pałac. Ocenia się, że w jednym tylko roku Luwr potrafi odwiedzić nawet 6 mln turystów.</p>
+             </div>
+             <div class="content">
+                <h2 id="wieza">Wieża Eiffla</h2>
+                <img src="img/wieza.jpg" alt="Paryż">
+                 <p>Wieża Eiffla - chyba każdy, kto był w Paryżu, ma zdjęcie właśnie z placu pod wieżą. Jest to nieoczekiwany symbol miasta. Nowoczesna konstrukcja, stojąca tam od niedawna, widoczna jest niemal z każdego punktu w mieście.</p>
+             </div>
+              <div class="content">
+                <h2 id="katedra">Katedra Notre-Dame</h2>
+                <img src="img/katedrasm.jpg" alt="Paryż">
+                <p>Katedra Notre Dame - jeden z największych symboli Paryża. Warto stać w kilkugodzinnej kolejce do wejścia, aby wspiąć się na wieżę, w której według legendy zamieszkiwał dzwonnik.</p>
+             </div>
+              <div class="content">
+                <h2 id="luk">Łuk Triumfalny</h2>
+                <img src="img/luk.jpg" alt="Paryż">
+                <p>Łuk triumfalny - monumentalny pomnik w formie łuku triumfalnego stojący na placu Charles’a de Gaulle’a w Paryżu. Jest to ważny element architektury Paryża, stanowiący zakończenie perspektywy Pól Elizejskich. Łuk został zbudowany w pierwszej połowie XIX wieku dla uczczenia tych, którzy walczyli i polegli za Francję w czasie wojen rewolucji francuskiej i wojen napoleońskich.</p>    
+             </div>
+              <div class="content">
+                <h2 id="avenue">Avenue des Champs-Elysees</h2>
+                <img src="img/avenue.jpg" alt="Paryż"></p>
+                <p>Avenue des Champs-Elysees - reprezentacyjna aleja Paryża, łącząca plac Zgody z placem Charles'a De Gaulle'a, na którym znajduje się Łuk Triumfalny. Pola Elizejskie rozciągają się na odcinku 1910 metrów w VIII dzielnicy, w północno-zachodniej części centralnego Paryża.</p>
+             </div>
+             <div class="content">
+                <h2 id="plac">Plac zgody</h2>
+                <img src="img/plac.jpg" alt="Paryż">
+                 <p>Plac zgody - (Place de la Concorde) duży (liczący 8,64 hektara powierzchni) plac w centrum Paryża, położony między Polami Elizejskimi a Ogrodami Tuileries.</p>
+             </div>
+             <div class="content">
+                <h2 id="sainte">Sainte-Chapelle</h2>
+                <img src="img/sainte.jpg" alt="Paryż">
+                 <p>Sainte-Chapelle - dwukondygnacyjna kaplica zamkowa położona w centrum dawnej siedziby królewskiej na wyspie Cité w Paryżu.</p>
+             </div>
+             <div class="content">
+                <h2 id="bazylika">Bazylika Sacre-Coeur</h2>
+                <img src="img/bazylika.jpg" alt="Paryż">
+                 <p>Bazylika Sacre Coeur: położona na romantycznych wzgórzach Montmartre, rozpościera się z niej imponujący widok na większą część miasta.</p>
+             </div>
+             <div class="content">
+                <h2 id="ogrod">Ogród Luksemburski</h2>
+                <img src="img/ogrod.jpg" alt="Paryż">
+                 <p>park miejski w Paryżu, we Francji o powierzchni 224 500 m².
+                Ten paryski ogród powstał około roku 1630 na życzenie drugiej żony i wdowy po Henryku IV, Marii Medycejskiej. W północnej części parku wzniesiono Pałac Luksemburski.</p>
+             </div>
+             <div class="content">
+                <h2 id="moulin">Moulin Rouge</h2>
+                <img src="img/moulin.jpg" alt="Paryż">
+                 <p>music-hall i kabaret otwarty 6 października 1889 przez Josepha Ollera, właściciela paryskiej Olympii. Położony w dzielnicy czerwonych latarni niedaleko Montmartre w Paryżu, jest znany z wielkiej, czerwonej imitacji młyna na dachu.</p>
+             </div>
+        </div>
+         <div id="footer">
+            <span>Kamil Witkowski 2ta<span>
+        </div>
+    </body>
+</html>

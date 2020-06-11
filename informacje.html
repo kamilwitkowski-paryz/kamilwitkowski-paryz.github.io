@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="shortcut icon" href="img/logo2.png">
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script src="jquery.scrollTo.min.js"></script>
+        
+        <script>
+            jQuery(function($)
+        {
+            //zresetuj scrolla
+            $.scrollTo(0);
+             
+            $('#link1').click(function() { $.scrollTo($('#budowacrt'), 500); });
+            $('#link2').click(function() { $.scrollTo($('#zasadacrt'), 500); });
+            $('#link3').click(function() { $.scrollTo($('#maskicrt'), 500); });
+     
+            $('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+        }
+        );
+            
+            //pokaz podczas przewijania
+            $(window).scroll(
+                function(){
+                    if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+                    else $('.scrollup').fadeOut();
+                }
+            );
+        </script>
+        <title> Paryż</title>
+    </head>
+    
+    <body>
+        <div id="logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <span> Przewodnik po Paryżu </span>
+        </div>
+         <div class="topnav" id="myTopnav">
+              <a href="index.html" class="active">Strona główna</a>
+             <a href="miasto.html">O mieście</a>
+              <a href="zabytki.html">Zabytki Paryża</a>
+              <a href="informacje.html">Prakyczne informacje</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
+        </div>
+         <div id="container">
+             <a href="#" class="scrollup"></a>
+             <div class="content">
+                 <h3>Praktyczne informacje o mieście</h3>
+                 <p>Paryż jest podzielony na 20 okręgów miejskich (fr. arrondissement municipal). Częściej używa się jednak prostszej formy arrondissement - okręg, jednak nie należy jej mylić z okręgiem jako jednostką administracyjną, która dzieli na mniejsze części departamenty. Liczbę „arrondissement” Paryża wskazują kody pocztowe (od 75001 do 75020). Każda z arrondissement jest podzielona na cztery dzielnice.</p>
+             </div>
+             <div class="list">
+                <h3>Dzielnice w Paryżu</h3>
+              <ol>
+                <li>Louvre</li>
+                <li>Bourse</li>
+                <li>Temple</li>
+                <li>Hôtel-de-Ville</li>
+                <li>Panthéon</li>
+                <li>Luxembourg</li>
+                <li>Palais-Bourbon</li>
+                <li>Élysée</li>
+                <li>Opéra</li>
+                <li>Enclos-St-Laurent</li>
+                <li>Popincourt</li>
+                <li>Reuilly</li>
+                <li>Gobelins</li>
+                <li>Observatoire</li>
+                <li>Vaugirard</li>
+                <li>Passy</li>
+                <li>Batignolles-Monceau</li>
+                <li>Butte-Montmartre</li>
+                <li>Buttes-Chaumont</li>
+                <li>Ménilmontant</li>
+              </ol>
+            </div>
+            <div class="content">
+                <img src="img/map3.png" alt="Dzielnice">
+                <span>
+                20 okręgów paryskich jest ułożonych w prawoskrętną spiralę, mającą początek w centrum miasta, w prawobrzeżnej części miasta (Rive droite), nad Sekwaną. W podobny sposób podzielone są także Marsylia i Lyon.</span>
+             </div>
+            <div class="content">
+                <h3>Mapa Paryża</h3>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.75769506593!2d2.277020441486901!3d48.85895068070215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2zUGFyecW8LCBGcmFuY2ph!5e0!3m2!1spl!2spl!4v1591878798038!5m2!1spl!2spl" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+             <div class="list">
+             <h3>Rozmówki francuskie</h3>
+             <ul>
+                 <li>Tak – Oui [łi]</li>
+                    <li>Nie – Non [ną]</li>
+                    <li>Dzień dobry – Bonjour [bążur]</li>
+                    <li>Cześć – Salut [salu]</li>
+                    <li>Dobry wieczór – Bonsoir [bąsłar]</li>
+                    <li>Do widzenia – Au revoir [orewłar]</li>
+                    <li>Jak się masz? – Comment ça va? [komą sa wa]</li>
+                    <li>Dobrze, dziękuję – Ca va, merci [sa wa, mersi]</li>
+                    <li>Dziękuję – Merci [mersi]</li>
+                    <li>Proszę? – Pardon? [pardą]</li>
+                    <li>Przepraszam – Excusez moi [ekskjuze mła]</li>
+                    <li>Nie mówię po francusku – Je ne parle pas francais [ży ny parl pa frąse]</li>
+                    <li>Nie rozumiem – Je ne comprends pas [ży ny kąprą pa]</li>
+                    <li>Nie wiem – Je ne sais pas [ży ny se pa]</li>
+                    <li>Jestem Polakiem/ Polką – Je suis polonais/ polonaise [ży słi polone/ polonez]</li>
+                    <li>Co to jest? – Qu’est-ce que c’est? [keske se?]</li>
+                    <li>Gdzie jest…? – Où est…? [u e]</li>
+                    <li>Na prawo – A droite [a drłat]</li>
+                    <li>Na lewo – A gauche [a gosz]</li>
+                    <li>Prosto – Tout droit [tu drła]</li>
+             </ul>
+             </div>
+             <div class="content">
+                <h3>Liczby po francusku</h3>
+            <table id="table">
+                <tr id="firstRow">
+                <td>Cyfra</td><td>Odpowiednik po francusku</td><td>Wymowa po polsku</td></tr>
+                <tr><td>1</td><td>un/une</td><td>[ę]</td></tr>
+                <tr><td>2</td><td>deux</td><td>[dy]</td></tr>
+                <tr><td>3</td><td>trois</td><td>[trła]</td></tr>
+                <tr><td>4</td><td>quatre</td><td>[katr]</td></tr>
+                <tr><td>5</td><td>cinq</td><td>[sęk]</td></tr>
+                <tr><td>6</td><td>six</td><td>[sis]</td></tr>
+                <tr><td>7</td><td>sept</td><td>[set]</td></tr>
+                <tr><td>8</td><td>huit</td><td>[łit]</td></tr>
+                <tr><td>9</td><td>neuf</td><td>[nef]</td></tr>
+                <tr><td>10</td><td>dix</td><td>[dis]</td></tr>
+            </table>
+            </div>
+            <div class="content">
+                <h1>Ankieta</h1>
+				    <form action="mailto:kamil.witkowski@tm1.edu.pl" method="POST">
+                <h2>Płeć</h2>
+                    <input type="radio" id="mezczyzna" name="gender" value="mezczyzna">
+                    <label for="mezczyzna">Mężczyzna</label>
+                    <input type="radio" id="kobieta" name="gender" value="kobieta">
+                    <label for="kobieta">Kobieta</label>
+				<h2>Wiek</h2>
+				    <input type="text" id="age" name="wiek" size="1" maxlength="4">
+                <h2>Czy byłeś byłaś kiedyś w Paryżu?</h2>
+                    <input type="radio" name="jazda" id="yes" value="yes">
+                    <label for="yes">Tak</label><br>
+                    <input type="radio" name="jazda" id="no" value="no">
+                    <label for="no">Nie</label><br>
+				<h2>Który zabytek podobał Ci się najbardziej:</h2>
+                    <label for="zabytek">Wybierz maszynę:</label>
+                    <select id="zabytek" name="zabytek">
+                        <option value="brak">brak</option>
+                        <option value="p1">1.Wieża Eiffla</option>
+                        <option value="p2">2.Luwr</option>
+                        <option value="p3">3.Bazylika Sacre Coeur</option>
+                        <option value="p4">4.Katedra Notre Dame</option>
+                        <option value="p5">5.Centrum Pompidou</option>
+                    </select><br><br>
+				<h2>Jak podoba ci się ta strona?</h2>
+                    <input type="radio" id="1" name="ocena" value="1" checked>
+                    <label for="1">Podoba mi się</label><br><br>
+                    <input type="radio" id="2" name="ocena" value="2">
+                    <label for="2">Nie podoba mi się</label><br><br>
+                    <input type="radio" id="3" name="ocena" value="3">
+                    <label for="3">Trochę tak i trochę nie</label><br><br>  
+  				<h2>Chciałbyś coś zmienić.. napisz</h2>
+                    <label><textarea name="message" rows="6" cols="35">Napisz swój komentarz</textarea></label><br><br>
+                        <input type="submit" value="Wyślij">
+                        <button type="reset">Wyczyść formularz</button><br><br>
+                    </form>	
+                </div>
+            
+         <div id="footer">
+            <span>Kamil Witkowski 2ta<span>
+        </div>
+    </body>
+</html>
