@@ -422,7 +422,7 @@ a.buttonlink{
 }
 
 /* TEL TEL TEL TEL TEL TEL TEL TEL TEL TEL TEL TEL TEL TEL TEL TEL TEL TEL TEL */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 610px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
