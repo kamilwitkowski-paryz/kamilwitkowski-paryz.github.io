@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         <link rel="shortcut icon" href="img/logo2.png">
+    <script src="lightbox-plus-jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="lightbox.min.css">
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script src="jquery.scrollTo.min.js"></script>
+        <script>
+            jQuery(function($)
+        {
+            //zresetuj scrolla
+            $.scrollTo(0);
+            $('.scrollup').click(function() { $.scrollTo($('body'), 700); });
+        }
+        );
+            
+            //pokaz podczas przewijania
+            $(window).scroll(
+                function(){
+                    if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+                    else $('.scrollup').fadeOut();
+                }
+            );
+        </script>
+        <title> Paryż</title>
+    </head>
+    
+    <body>
+        <div id="logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            <span> Przewodnik po Paryżu </span>
+        </div>
+         <div class="topnav" id="myTopnav">
+              <a href="index.html" class="active">Strona główna</a>
+             <a href="miasto.html">O mieście</a>
+              <a href="zabytki.html">Zabytki Paryża</a>
+              <a href="informacje.html">Prakyczne informacje</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
+        </div>
+         <div id="container">
+             <a href="#" class="scrollup"></a>
+            <div class="content">
+                <h1>Paryż - stolica Francji</h1>
+                <img src="img/zdje1.jpg" alt="Paryż">
+                <p>Paryż (fr. Paris) to stolica Francji i jednocześnie najbardziej zaludnione miasto w tym kraju. Oficjalna liczba mieszkańców to ok. 2 mln 144 tys osób. Ocenia się, do całej aglomeracji paryskiej należy łącznie ok. 12 mln osób. Pod tym względem Paryż zostawia daleko w tyle pozostałe miasta we Francji, które są już dużo mniej liczne. Jest to też centrum polityczne, kulturalne i ekonomiczne Francji.</p>
+            </div>
+            <div class="content">
+            <div class="list">
+                <h3>Spis treści:</h3>
+                <ol>
+                    <a href="#link1"><li>Turystyka w Paryżu</li></a>
+                    <a href="#link2"><li>Historia herbu</li></a>
+                    <a href="#link3"><li>Paryż - spacer z ambasadorem</li></a>
+                    <a href="#link4"><li>Hymn</li></a>
+                    <a href="#link5"><li>Galeria</li></a>
+                </ol>
+            </div>
+            </div>
+            <div class="content">
+                <p>Miasto ma powierzchnię ok. 105 km² i od 1860 r. jest podzielone na 20 dzielnic (każda z dzielnic wybiera swojego mera). Kiedy przyjrzymy się planowi Paryża, dostrzeżemy, że jego najważniejsze ulice wychodzą z centrum gwiaździście – jest to miasto na planie koncentrycznym. Podobnie też przebiega numeracja w Paryżu: numery dzielnic biegną od środka, zgodnie z ruchem wskazówek zegara.</p>
+                <p>Historycznym centrum jest wyspa Île de la Cité, z uwielbianą przez turystów Dzielnicą Łacińską. Znajduje się tam Katedra Notre-Dame i wiele sławnych w całym świecie kościołów gotyckich.</p>
+                <p>Miasto jest wyraźnie przedzielone przez Sekwanę: lewobrzeżna część miasta to Rive Gauche, a prawa: Rive Droite.</p>
+            </div>
+            <div class="content">
+                <h1 id="link1">Turystyka w Paryżu</h1>
+                <p>Paryż to miasto niezwykle chętnie odwiedzane przez turystów. Rocznie miasto odwiedza aż 30 mln turystów: nie tylko Niemców, Anglików, Rosjan i Włochów, ale też Amerykanów, Japończyków oraz mieszkańców Ameryki Południowej. Jest to też miasto w pełni liczące się na światowej mapie ośrodków kulturalnych: paryskie pokazy mody, domy mody, a także wystawy sztuki nowoczesnej, konferencje oraz pokazy artystyczne i spektakle… któż z nas o nich nie słyszał?</p>
+                <img src="img/zdj2.jpg" alt="Paryż">
+            </div>
+            <div class="content">
+                <h1 id="link2">Historia herbu</h1>
+                <span>W przypadku stolicy Francji możemy mówić o dwóch herbach miasta:</span>
+                    <ul>
+                        <li>wielkim herbie</li>
+                        <li>małym herbie</li>
+                    </ul>
+                <p>Oba odzwierciedlają bogatą historię miasta i przechodziły różne zmiany wizerunkowe. Ostateczne wersje zostały ustalone w II poł. XIX w.</p>
+                <p>Herb mały to godło dawnej, średniowiecznej gildii kupców transportujących swoje towary Sekwaną. Była to najważniejsza grupa zawodowa w ówczesnym mieście, mająca ogromne wpływy, na decyzje władz oraz życie mieszkańców. Herb podzielony jest na dwie części. W górnej znajduje się poziomy pas z charakterystycznymi figurami heraldycznymi fleur-de-lis. W dolnej części tarczy natomiast znajduje się biały statek na wodzie umieszczony na czerwonym tle.</p>
+                <p>Herb wielki składa się z tarczy herbu małego, nad którą znajduje się złota, pięciobasztowa corona muralis. Pod tarczą umieszczona jest dewiza miasta Fluctuat nec mergitur, oznaczająca: rzuca nim fala, lecz nie tonie. Wskazuje ona na hart ducha i siłę mieszkańców.</p>
+            </div>
+            <div class="content">
+                 <h1 id="link3">Paryż - spacer z Ambasadorem</h1>
+                <iframe id="video" src="https://www.youtube.com/embed/jBl9lxJFX9c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+             <div class="content">
+                 <h1 id="link4">Hymn Francji</h1>
+                 <audio controls id="audio">
+	               <source src="media/hymn.mp3" type="audio/mpeg">
+  	             </audio>
+                 <p style="text-align: center;">Tytuł: La Marseillaise (Marsylianka)</p>
+            </div>
+             <div class="content">
+             <h1 id="link5">Galeria</h3>
+             </div>
+             <div class="gallery">
+                <a href="img/1.jpg" data-lightbox="mygallery"><img src="img/1sm.jpg" alt="x"></a>
+                <a href="img/2.jpg" data-lightbox="mygallery"><img src="img/2sm.jpg" alt="x"></a>
+             </div>
+            <div class="gallery">
+                <a href="img/3.jpg" data-lightbox="mygallery"><img src="img/3sm.jpg" alt="x"></a>
+                <a href="img/4.jpg" data-lightbox="mygallery"><img src="img/4sm.jpg" alt="x"></a>
+             </div>
+            <div class="gallery">
+                <a href="img/5.jpg" data-lightbox="mygallery"><img src="img/5sm.jpg" alt="x"></a>
+                <a href="img/6.jpg" data-lightbox="mygallery"><img src="img/6sm.jpg" alt="x"></a>
+            </div>
+            <div class="content">
+            <div class="button"><a href="https://www.istockphoto.com/pl/obrazy/pary%C5%BC?phrase=pary%C5%BC&sort=mostpopular"  target="_blank" class="buttonlink">Więcej zdjęć Paryża</a></div>
+             </div>
+
+        </div>
+         <div id="footer">
+            <span>Kamil Witkowski 2ta<span>
+        </div>
+    </body>
+</html>
